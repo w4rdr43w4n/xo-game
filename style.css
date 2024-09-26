@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root{
+  width:100%;
+  height: 100%;
+  --box_height:100px;
+  --box_width:var(--box_height);
+}
+html{
+  width:100%;
+  height: 100%;
+}
+body{
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(40, 39, 39);
+}
+
+
+.gamepad{
+  background-color: #fff;
+  width:fit-content;
+  height: fit-content;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: var(--box_height) var(--box_height) var(--box_height);
+}
+.gamepad div{
+  background-color:  rgb(40, 39, 39);
+  width:var(--box_width);
+  height: var(--box_height);
+  cursor: pointer;
+  color:#fff;
+  font-size: 90px;
+  text-align: center;
+}
+.turns{
+  margin: 20px 10px;
+  color:#fff;
+  font-size: 25px;
+  border:2px solid #fff;
+  padding: 10px;
+}
+.restart{
+  border:none;
+  outline:2px solid #fff;
+  background-color: transparent;
+  color:#fff;
+  font-size: 30px;
+  font-weight: 900;
+  padding: 10px;
+  cursor: pointer;
+}
+.restart:hover{
+  color:orange;
+  outline: 2px solid orange;
+}
