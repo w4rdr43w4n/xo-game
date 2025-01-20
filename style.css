@@ -57,8 +57,10 @@ body{
   font-weight: 900;
   padding: 10px;
   cursor: pointer;
+  transition:0.25s ease-in-out;
 }
 .restart:hover{
+  box-shadow:0px 0px 10px orange;
   color:orange;
   outline: 2px solid orange;
 }
